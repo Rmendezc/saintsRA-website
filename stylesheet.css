@@ -1,11 +1,30 @@
-html{
-    box-sizing:border-box;
-    margin:10px;
-    padding:10px;
+body{
     background-color:beige;
-    width: 1024px;
-    align-items: center;
+    
 }
+nav{
+    background-color: whitesmoke;
+    padding: 2px;
+    border-radius: 15px;
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    padding: 3px;
+}
+nav li a{
+    text-decoration: none;
+    color: #000000;
+    padding: 20px;
+    font-weight: bold;
+}
+nav li a:hover{
+    color: grey;
+}
+
 li{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
@@ -31,31 +50,31 @@ header{
     height:0,auto;
     float:left;
 }
-.stussy{
-list-style: none;;
-}
-.stussy li {
-    display: inline-block;
-    padding: 0px 20px;
-}
-.stussy li a{
-    transition: all 0.3s ease 0s;
-}
-.stussy li a:hover{
-    color: brown;
+#products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+
 }
 .image-resize{
     width: 360px;
     height: 400px;
-}
-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: center;
-  }
-  
-  .image-resize {
     max-width: 100%;
     height: auto;
+}
+section{
+    text-align: center ;
+}
+
+footer {
+    background-color:whitesmoke;
+    color: black;
+    text-align: center;
+    padding: 20px 20px;
+    bottom: 0;
+    left: 20px;
+    width: 100%;
+  }
+footer img{
+    width: 100px;
   }
